@@ -23,7 +23,7 @@ def myfunc(*args, **kwargs):
     #   Так мы можем "индексировать" словарь
 
 
-# myfunc(1, 4.7, 'Hello World', x = 1, y = 2, z = 3)
+# >>> myfunc(1, 4.7, 'Hello World', x = 1, y = 2, z = 3)
 #
 # args:  (1, 4.7, 'Hello World')
 # <class 'tuple'>
