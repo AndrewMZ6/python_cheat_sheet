@@ -1,2 +1,2 @@
 # Python
-Just some python modules
+Just some python learning code
