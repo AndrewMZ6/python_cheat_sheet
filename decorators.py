@@ -24,7 +24,7 @@ def decoratedFunc():
     print('Hi I am decorated function')
 
 
-# Testing the result
+############# displaying the result ################
 print('------ someVar = outerfunc(somefunc) -------', end = '\n\n')
 someVar = outerfunc(inputfunc)
 print('\n')
@@ -37,7 +37,8 @@ print('\n')
 print('------ decoratedFunc() -------', end = '\n\n')
 decoratedFunc()
 
-# Cosole Output
+############## Cosole Output ########################
+
 # this is outer function
 # ------ someVar = outerfunc(somefunc) -------
 
