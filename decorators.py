@@ -62,4 +62,5 @@ decoratedFunc()
 # this is executed before input function
 # Hi I am decorated function
 # this is inner function
+
 # [Finished in 136ms]
