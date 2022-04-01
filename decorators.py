@@ -1,7 +1,7 @@
 # define outer function
 def outerfunc(inputfunc):
     '''
-        documentation string
+documentation string
     '''
     print('this is outer function')
     outerVar = 'outerVar'
@@ -19,12 +19,12 @@ def inputfunc():
     print('Hi I am input function')
 
 # the function decoratedFunc is "decorated" with the outer function
+print('----- decorator declaration ------------', end = '\n\n')
+
 @outerfunc
 def decoratedFunc():
     print('Hi I am decorated function')
 
-
-############# displaying the result ################
 print('------ someVar = outerfunc(somefunc) -------', end = '\n\n')
 someVar = outerfunc(inputfunc)
 print('\n')
@@ -38,6 +38,8 @@ print('------ decoratedFunc() -------', end = '\n\n')
 decoratedFunc()
 
 ############## Cosole Output ########################
+
+# ----- decorator declaration ------------
 
 # this is outer function
 # ------ someVar = outerfunc(somefunc) -------
