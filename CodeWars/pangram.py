@@ -4,8 +4,8 @@
 
 # Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
 
-a = 'hello this is my python testing sentence, and it is definitely not a pangram!'
-b = "The quick, brown fox jumps over the lazy dog!"
+not_a_pangram = 'hello this is my python testing sentence, and it is definitely not a pangram!'
+pangram_for_sure = "The quick, brown fox jumps over the lazy dog!"
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def is_pangram(sentence: str):
@@ -20,7 +20,7 @@ def is_pangram(sentence: str):
 
 	return not bool(alphabet)
 
-print(is_pangram(a))
+print(is_pangram(not_a_pangram))
 # False
-print(is_pangram(b))
+print(is_pangram(pangram_for_sure))
 # True
