@@ -1,3 +1,19 @@
+# decorator that limits the amount of letters in string
+
+def limiter(n = 10):
+	def ponchik(func):
+		def decorator(s):
+			try:
+				assert len(s) < n
+				m = func(s)
+				return m
+			except AssertionError:
+				print(f'The input string length cannot be more than {n} letters')
+
+		return decorator
+	return ponchik
+
+@limiter(n = 62)
 def func(s:str) ->str:
 
 	counter = 1
@@ -19,3 +35,5 @@ def func(s:str) ->str:
 
 p = func('aacbbbttbc asssssssdas')
 print(p)
+# output
+# a2c1b3t2b1c1 1a1s7d1a1s1
