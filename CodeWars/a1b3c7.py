@@ -4,7 +4,7 @@ def limiter(n = 10):
 	def ponchik(func):
 		def decorator(s):
 			try:
-				assert len(s) < n
+				assert len(s) <= n
 				m = func(s)
 				return m
 			except AssertionError:
