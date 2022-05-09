@@ -1,4 +1,4 @@
-# decorator that limits the amount of letters in string
+# decorator that limits the amount oof letters in string
 
 def limiter(n = 10):
 	def ponchik(func):
