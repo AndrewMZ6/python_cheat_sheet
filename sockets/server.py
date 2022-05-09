@@ -17,3 +17,9 @@ while True:
     comm.send('I received your message. TY!'.encode('utf-8'))
     comm.close()
     print(f'connection with client {addr} closed')
+
+### output
+# created socket <socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.0.13', 12311), raddr=('192.168.0.13', 49719)>
+# connected to client ('192.168.0.13', 49719)
+# got message HELLO!
+# connection with client ('192.168.0.13', 49719) closed
