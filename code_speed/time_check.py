@@ -1,3 +1,5 @@
+import time
+
 def measure_time(func):
 	def wrapper(*args):
 		t_start = time.time_ns()
