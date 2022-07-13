@@ -18,7 +18,7 @@ def is_pangram(sentence: str) -> bool:
 			if letter in alphabet:
 				alphabet.remove(letter)
 
-	return not bool(alphabet)
+	return not alphabet
 
 print(is_pangram(not_a_pangram))
 # False
