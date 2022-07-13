@@ -8,7 +8,7 @@ not_a_pangram = 'hello this is my python testing sentence, and it is definitely 
 pangram_for_sure = "The quick, brown fox jumps over the lazy dog!"
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-def is_pangram(sentence: str):
+def is_pangram(sentence: str) -> bool:
 
 	words: list = sentence.split()
 
