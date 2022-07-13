@@ -3,7 +3,6 @@
 class myclass:
 	'''
 		This class is one of the foremost classes that's everseen. Pog?
-
 	'''
 
 	__name__ = 'SPARTA'
@@ -18,7 +17,7 @@ class myclass:
 			assert hasattr(other, 'value') == True and type(other.value) == str
 			return len(self.value) == len(other.value)
 		except AssertionError:
-			print('LOL')
+			return 'LOL'
 
 	def __hash__(self):
 		return 91231
@@ -42,11 +41,16 @@ n = myclass('word')
 z = myclass(54)
 
 print(m == n)
+# True
+
 print(m == z)
+# LOL
 
 print(hash(m))
+# 91231
 
 m[0] = 51
 m[9] = 'hello'
 
 print(m.dic)
+# {0: 51, 9: 'hello'}
