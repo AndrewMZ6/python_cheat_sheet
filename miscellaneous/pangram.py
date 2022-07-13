@@ -10,7 +10,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 def is_pangram(sentence: str):
 
-	words: list = sentence.split(' ')
+	words: list = sentence.split()
 
 	for word in words:
 		letters :list = list(word)
