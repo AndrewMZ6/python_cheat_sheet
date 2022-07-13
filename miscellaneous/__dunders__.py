@@ -1,3 +1,5 @@
+# experimenting with classes' dunder methods
+
 class myclass:
 	'''
 		This class is one of the foremost classes that's everseen. Pog?
