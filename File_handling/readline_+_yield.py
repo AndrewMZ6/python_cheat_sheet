@@ -1,3 +1,14 @@
+# first create a txt file and write fake emails there
+from faker import Faker
+
+fk = Faker()
+
+with open('mytext.txt', 'w') as fd:
+	for i in range(50):
+		fd.write("%s\n" % fk.ascii_email())
+
+-----------------------------------------------------------
+# now read the file 
 filename = 'mytext.txt'
 
 def get_line(filename):
