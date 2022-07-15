@@ -1,5 +1,8 @@
 from threading import Thread
 from func_module import my_gen
+# TODO:
+# to make a function that accepts number of threads a input variable an does some task
+# dividing it to a number of threads specified by parameter
 
 L = []
 
