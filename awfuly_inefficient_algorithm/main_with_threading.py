@@ -26,6 +26,9 @@ t2.start()
 main_thr()
 
 print(len(L))
+for i in L:
+	print(i)
+
 
 # output:
 # thread 1 done!
