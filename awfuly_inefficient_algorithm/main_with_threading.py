@@ -2,7 +2,9 @@ from threading import Thread
 from func_module import my_gen
 # TODO:
 # to make a function that accepts number of threads a input variable an does some task
-# dividing it to a number of threads specified by parameter
+# dividing it to a number of threads specified by parameter like this:
+# def run_task_using_n_threads(n:int):
+# 	split the task to n threads
 
 L = []
 
