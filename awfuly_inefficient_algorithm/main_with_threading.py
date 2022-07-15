@@ -28,7 +28,7 @@ main_thr()
 print(len(L))
 
 # output:
-thread 1 done!
+# thread 1 done!
 # thread 2 done!
 # main thread done!
 # 100
