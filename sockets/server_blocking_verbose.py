@@ -32,13 +32,15 @@ while True:
 	client_socket, addr = server_socket.accept()
 
 	while True:
+		print("while True 2")
 
 		# socket.recv(bufsize[, flags])
 		# Receive data from the socket. The return value is a bytes object representing the data received
-		request = client_socket.recv(4096)
-		print(request)
+		request = client_socket.recv(4096).decode('utf-8')
+		print(f"request:\n{request}")
 		
 		if request == "\n":
+			print("break oprion -----------------------")
 			break
 		else:
 
@@ -49,3 +51,6 @@ while True:
 			# socket.send(bytes[, flags])
 			# Send data to the socket. The socket must be connected to a remote socket. 
 			client_socket.send(response)
+			break
+		break
+	break
