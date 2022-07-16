@@ -1,6 +1,8 @@
 # The purpose was to run 2 functions asynchronously with random sleep time
 # just to see how does it works
 
+# hint: The keyword "await" passes function control back to the event loop
+
 import random
 import string as s
 import asyncio
