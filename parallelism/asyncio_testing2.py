@@ -1,47 +1,40 @@
-# The purpose was to run 2 functions asynchronously with random sleep time
-# just to see how does it works
-
-# hint: The keyword "await" passes function control back to the event loop
-
 import random
-import string as s
 import asyncio
-from sys import exit
-from time import sleep
+from faker import Faker
 
-async def blocking():
-	for i in range(10):
-		print(i)
-		sleep(.1)
+# asynchronous fake email generator
+async def email_gen(x):
+	print('-> email_gen first line')
+	emails = Faker()
+	while x:
+		x -= 1
+		yield emails.email()
 
-# the function "numbers" suspends and awaits for function "blocking" to finish
-# then the execution proceeds
-async def numbers():
-	print("----------------1----------")
-	res = await blocking()
-	print("----------------2----------")
-	return 'numbers finished successfully'
+# asynchronous random number [0.0, 1.0) generator
+async def mygen(x):
+	print('-> mygen first line')
+	while x:
+		x -= 1
+		yield random.random()
 
+# prints random numbers in async for loop
+async def f(x):
+	print('-> f() first line')
+	async for i in mygen(x):
+			print(i)
+			await asyncio.sleep(1)
+
+# prints emails in async for loop
+async def h(x):
+	print('-> h() first line')
+	async for j in email_gen(x):
+			print(j)
+			await asyncio.sleep(1)
+
+# main coroutine
 async def main():
-	res = await asyncio.gather(numbers())
-	print(res)
+	await asyncio.gather(f(4), h(3))
 
+# creates eventloop and runs the main coroutine
 if __name__ == '__main__':
 	asyncio.run(main())
-
-
-# output:
-# ----------------1----------
-# 0
-# 1
-# 2
-# 3
-# 4
-# 5
-# 6
-# 7
-# 8
-# 9
-# ----------------2----------
-# ['numbers finished successfully']
-# [Finished in 1.3s]
