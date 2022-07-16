@@ -38,3 +38,18 @@ async def main():
 # creates eventloop and runs the main coroutine
 if __name__ == '__main__':
 	asyncio.run(main())
+
+# output:
+#
+# -> f() first line
+# -> mygen first line
+# 0.007900825453143523
+# -> h() first line
+# -> email_gen first line
+# julie81@example.net
+# 0.9710039284381164
+# kelly89@example.net
+# 0.5811082916136737
+# ojones@example.org
+# 0.2650784122835159
+# [Finished in 4.5s]
