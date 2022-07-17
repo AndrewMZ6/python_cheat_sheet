@@ -49,3 +49,15 @@ for value, index in order.items():
 
 corrected_list = list(filter(lambda x: not isinstance(x, str), corrected_list))
 print(f"corrected_list:\n{corrected_list}")
+
+
+# OUTPUT: 
+# original list:
+# [1, 8.1, 9, 52.3, -6.1, 0, -90, 4, 52.3, 3.14, 3.14]
+# new_list:
+# [0, 1, 3.14, 4, -90, 8.1, 9, 52.3, -6.1]
+# order dict:
+# {0: 5, 1: 0, 3.14: 9, 4: 7, -90: 6, 8.1: 1, 9: 2, 52.3: 3, -6.1: 4}
+# corrected_list:
+# [1, 8.1, 9, 52.3, -6.1, 0, -90, 4, 3.14]
+# [Finished in 148ms]
