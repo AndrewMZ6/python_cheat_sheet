@@ -1,3 +1,12 @@
+# tThe idea of the unique_list class
+# is to add functionality to build-in class list
+# that removes duplicates but saves the order of the 
+# elements
+
+# The first step is to create algorithm of how to
+# filter duplicates and keep order
+
+
 class unique_list(list):
 	pass
 
