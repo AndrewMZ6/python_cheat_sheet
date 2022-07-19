@@ -261,3 +261,127 @@ queue_time(customers, n)
 # [Word]-> final thread_list: ['64.252.16.89', '216.92.247.204', '204.58.103.33', '7.30.61.235', '12.171.112.58', '211.54.73.99', '176.216.186.27']
 # [Kind]-> final thread_list: ['198.230.150.63', '58.188.215.181', '221.24.119.119', '148.234.248.179', '206.143.202.184', '180.219.87.81', '112.2.78.68']
 # [Finished in 7.9s]
+
+####################################################################################
+# number of threads n = 20, delay = 0.1
+# [Let]-> iteration_number: 0
+# [Let]-> index supposed to append: 0
+# [Let]-> index of appended element: 0
+# [Let]-> current thread_list: ['13.150.188.208']
+
+# [Job]-> iteration_number: 0
+# [Job]-> index supposed to append: 1
+# [Job]-> index of appended element: 1
+# [Job]-> current thread_list: ['126.83.138.132']
+
+# [Morning]-> iteration_number: 0
+# [Morning]-> index supposed to append: 2
+# [Morning]-> index of appended element: 2
+# [Morning]-> current thread_list: ['132.188.252.218']
+
+# [Reality]-> iteration_number: 0
+# [Reality]-> index supposed to append: 3
+# [Reality]-> index of appended element: 3
+# [Reality]-> current thread_list: ['8.165.73.136']
+
+# [Father]-> iteration_number: 0
+# [Father]-> index supposed to append: 4
+# [Father]-> index of appended element: 4
+# [Father]-> current thread_list: ['38.77.212.59']
+
+# [Certain]-> iteration_number: 0
+# [Certain]-> index supposed to append: 5
+# [Certain]-> index of appended element: 5
+# [Certain]-> current thread_list: ['3.102.55.152']
+
+# [Law]-> iteration_number: 0
+# [Law]-> index supposed to append: 6
+# [Law]-> index of appended element: 6
+# [Law]-> current thread_list: ['185.242.223.246']
+
+# [Story]-> iteration_number: 0
+# [Story]-> index supposed to append: 7
+# [Story]-> index of appended element: 7
+# [Story]-> current thread_list: ['35.114.231.249']
+
+# [Say]-> iteration_number: 0
+# [Say]-> index supposed to append: 8
+# [Say]-> index of appended element: 8
+# [Say]-> current thread_list: ['48.80.250.252']
+
+# [Road]-> iteration_number: 0
+# [Road]-> index supposed to append: 9
+# [Road]-> index of appended element: 9
+# [Road]-> current thread_list: ['84.201.28.71']
+
+# [Guy]-> iteration_number: 0
+# [Guy]-> index supposed to append: 10
+# [Guy]-> index of appended element: 10
+# [Guy]-> current thread_list: ['12.176.132.51']
+
+# [Leader]-> iteration_number: 0
+# [Leader]-> index supposed to append: 11
+# [Leader]-> index of appended element: 11
+# [Leader]-> current thread_list: ['89.53.160.70']
+
+# [Give]-> iteration_number: 0
+# [Give]-> index supposed to append: 12
+# [Give]-> index of appended element: 12
+# [Give]-> current thread_list: ['120.26.147.199']
+
+# [Over]-> iteration_number: 0
+# [Over]-> index supposed to append: 13
+# [Over]-> index of appended element: 13
+# [Over]-> current thread_list: ['9.250.75.164']
+
+# [Field]-> iteration_number: 0
+# [Field]-> index supposed to append: 14
+# [Field]-> index of appended element: 14
+# [Field]-> current thread_list: ['9.152.106.70']
+
+# [Painting]-> iteration_number: 0
+# [Painting]-> index supposed to append: 15
+# [Painting]-> index of appended element: 15
+# [Painting]-> current thread_list: ['31.235.146.3']
+
+# [Mind]-> iteration_number: 0
+# [Mind]-> index supposed to append: 16
+# [Mind]-> index of appended element: 16
+# [Mind]-> current thread_list: ['199.120.21.192']
+
+# [Yourself]-> iteration_number: 0
+# [Yourself]-> index supposed to append: 17
+# [Yourself]-> index of appended element: 17
+# [Yourself]-> current thread_list: ['121.244.138.157']
+
+# [Similar]-> iteration_number: 0
+# [Similar]-> index supposed to append: 18
+# [Similar]-> index of appended element: 18
+# [Similar]-> current thread_list: ['68.77.244.49']
+
+# [Of]-> iteration_number: 0
+# [Of]-> index supposed to append: 19
+# [Of]-> index of appended element: 19
+# [Of]-> current thread_list: ['116.165.236.19']
+
+# [Let]-> final thread_list: ['13.150.188.208']
+# [Job]-> final thread_list: ['126.83.138.132']
+# [Morning]-> final thread_list: ['132.188.252.218']
+# [Reality]-> final thread_list: ['8.165.73.136']
+# [Father]-> final thread_list: ['38.77.212.59']
+# [Certain]-> final thread_list: ['3.102.55.152']
+# [Law]-> final thread_list: ['185.242.223.246']
+# [Story]-> final thread_list: ['35.114.231.249']
+# [Say]-> final thread_list: ['48.80.250.252']
+# [Road]-> final thread_list: ['84.201.28.71']
+# [Guy]-> final thread_list: ['12.176.132.51'][Leader]-> final thread_list: ['89.53.160.70']
+
+# [Give]-> final thread_list: ['120.26.147.199']
+# [Over]-> final thread_list: ['9.250.75.164']
+# [Field]-> final thread_list: ['9.152.106.70']
+# [Painting]-> final thread_list: ['31.235.146.3'][Mind]-> final thread_list: ['199.120.21.192']
+
+# [Yourself]-> final thread_list: ['121.244.138.157']
+# [Similar]-> final thread_list: ['68.77.244.49']
+# [Of]-> final thread_list: ['116.165.236.19']
+# [Finished in 1.9s]
