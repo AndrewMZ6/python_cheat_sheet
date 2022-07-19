@@ -36,7 +36,7 @@ def queue_time(customers, n):
 	threads = [threading.Thread(target=handle, name=uwu.capitalize()) for uwu in thread_names]
 	for thread in threads:
 		thread.start()
-		# time.sleep(0.25)
+		time.sleep(0.25)
 
 	for thread in threads:
 		thread.join()
@@ -153,3 +153,111 @@ queue_time(customers, n)
 # [Talk]-> final thread_list: ['42.233.220.176', '162.66.199.175', '10.88.228.5', '153.195.106.148', '98.233.229.201', '85.62.67.179', '82.43.19.198']
 
 # [Finished in 7.7s]
+
+
+######################################################################
+# if uncomment the time.sleep(0.25) in line 39 we get perfect result:
+# [Word]-> iteration_number: 0
+# [Word]-> index supposed to append: 0
+# [Word]-> index of appended element: 0
+# [Word]-> current thread_list: ['64.252.16.89']
+
+# [Kind]-> iteration_number: 0
+# [Kind]-> index supposed to append: 1
+# [Kind]-> index of appended element: 1
+# [Kind]-> current thread_list: ['198.230.150.63']
+
+# [Test]-> iteration_number: 0
+# [Test]-> index supposed to append: 2
+# [Test]-> index of appended element: 2
+# [Test]-> current thread_list: ['113.192.217.67']
+
+# [Word]-> iteration_number: 1
+# [Word]-> index supposed to append: 3
+# [Word]-> index of appended element: 3
+# [Word]-> current thread_list: ['64.252.16.89', '216.92.247.204']
+
+# [Kind]-> iteration_number: 1
+# [Kind]-> index supposed to append: 4
+# [Kind]-> index of appended element: 4
+# [Kind]-> current thread_list: ['198.230.150.63', '58.188.215.181']
+
+# [Test]-> iteration_number: 1
+# [Test]-> index supposed to append: 5
+# [Test]-> index of appended element: 5
+# [Test]-> current thread_list: ['113.192.217.67', '115.210.29.54']
+
+# [Word]-> iteration_number: 2
+# [Word]-> index supposed to append: 6
+# [Word]-> index of appended element: 6
+# [Word]-> current thread_list: ['64.252.16.89', '216.92.247.204', '204.58.103.33']
+
+# [Kind]-> iteration_number: 2
+# [Kind]-> index supposed to append: 7
+# [Kind]-> index of appended element: 7
+# [Kind]-> current thread_list: ['198.230.150.63', '58.188.215.181', '221.24.119.119']
+
+# [Test]-> iteration_number: 2
+# [Test]-> index supposed to append: 8
+# [Test]-> index of appended element: 8
+# [Test]-> current thread_list: ['113.192.217.67', '115.210.29.54', '173.88.96.172']
+
+# [Word]-> iteration_number: 3
+# [Word]-> index supposed to append: 9
+# [Word]-> index of appended element: 9
+# [Word]-> current thread_list: ['64.252.16.89', '216.92.247.204', '204.58.103.33', '7.30.61.235']
+
+# [Kind]-> iteration_number: 3
+# [Kind]-> index supposed to append: 10
+# [Kind]-> index of appended element: 10
+# [Kind]-> current thread_list: ['198.230.150.63', '58.188.215.181', '221.24.119.119', '148.234.248.179']
+
+# [Test]-> iteration_number: 3
+# [Test]-> index supposed to append: 11
+# [Test]-> index of appended element: 11
+# [Test]-> current thread_list: ['113.192.217.67', '115.210.29.54', '173.88.96.172', '87.80.104.224']
+
+# [Word]-> iteration_number: 4
+# [Word]-> index supposed to append: 12
+# [Word]-> index of appended element: 12
+# [Word]-> current thread_list: ['64.252.16.89', '216.92.247.204', '204.58.103.33', '7.30.61.235', '12.171.112.58']
+
+# [Kind]-> iteration_number: 4
+# [Kind]-> index supposed to append: 13
+# [Kind]-> index of appended element: 13
+# [Kind]-> current thread_list: ['198.230.150.63', '58.188.215.181', '221.24.119.119', '148.234.248.179', '206.143.202.184']
+
+# [Test]-> iteration_number: 4
+# [Test]-> index supposed to append: 14
+# [Test]-> index of appended element: 14
+# [Test]-> current thread_list: ['113.192.217.67', '115.210.29.54', '173.88.96.172', '87.80.104.224', '178.22.207.134']
+
+# [Word]-> iteration_number: 5
+# [Word]-> index supposed to append: 15
+# [Word]-> index of appended element: 15
+# [Word]-> current thread_list: ['64.252.16.89', '216.92.247.204', '204.58.103.33', '7.30.61.235', '12.171.112.58', '211.54.73.99']
+
+# [Kind]-> iteration_number: 5
+# [Kind]-> index supposed to append: 16
+# [Kind]-> index of appended element: 16
+# [Kind]-> current thread_list: ['198.230.150.63', '58.188.215.181', '221.24.119.119', '148.234.248.179', '206.143.202.184', '180.219.87.81']
+
+# [Test]-> iteration_number: 5
+# [Test]-> index supposed to append: 17
+# [Test]-> index of appended element: 17
+# [Test]-> current thread_list: ['113.192.217.67', '115.210.29.54', '173.88.96.172', '87.80.104.224', '178.22.207.134', '153.219.82.178']
+
+# [Word]-> iteration_number: 6
+# [Word]-> index supposed to append: 18
+# [Word]-> index of appended element: 18
+# [Word]-> current thread_list: ['64.252.16.89', '216.92.247.204', '204.58.103.33', '7.30.61.235', '12.171.112.58', '211.54.73.99', '176.216.186.27']
+
+# [Kind]-> iteration_number: 6
+# [Kind]-> index supposed to append: 19
+# [Kind]-> index of appended element: 19
+# [Kind]-> current thread_list: ['198.230.150.63', '58.188.215.181', '221.24.119.119', '148.234.248.179', '206.143.202.184', '180.219.87.81', '112.2.78.68']
+
+# [Test]-> final thread_list: ['113.192.217.67', '115.210.29.54', '173.88.96.172', '87.80.104.224', '178.22.207.134', '153.219.82.178']
+# [Word]-> final thread_list: ['64.252.16.89', '216.92.247.204', '204.58.103.33', '7.30.61.235', '12.171.112.58', '211.54.73.99', '176.216.186.27']
+# [Kind]-> final thread_list: ['198.230.150.63', '58.188.215.181', '221.24.119.119', '148.234.248.179', '206.143.202.184', '180.219.87.81', '112.2.78.68']
+# [Finished in 7.9s]
