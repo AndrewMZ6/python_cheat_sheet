@@ -8,20 +8,27 @@
 
 import sys
 class unique_list(list):
+	print(__doc__)
 	def __init__(self, x):
 		super().__init__(x)
-		print(f"""x:\n
-				  {x}\n
-				  type:\n
-				  {type(x)}\n
-				  dir:\n
-				  {dir(x)}\n""")
-		print(f"""self:\n
-				  {self}\n
-				  type:\n
-				  {type(self)}\n
-				  dir:\n
-				  {dir(self)}\n""")
+		# print(f"""x:\n
+		# 		  {super()}\n
+		# 		  type:\n
+		# 		  {type(super())}\n
+		# 		  dir:\n
+		# 		  {dir(super())}\n""")
+		# print(f"""x:\n
+		# 		  {x}\n
+		# 		  type:\n
+		# 		  {type(x)}\n
+		# 		  dir:\n
+		# 		  {dir(x)}\n""")
+		# print(f"""self:\n
+		# 		  {self}\n
+		# 		  type:\n
+		# 		  {type(self)}\n
+		# 		  dir:\n
+		# 		  {dir(self)}\n""")
 
 	def make_unique(self: list) -> list:
 		S1 = set(self)
@@ -55,9 +62,10 @@ class unique_list(list):
 		return corrected_list
 
 
-L1 = [1, 8.1, 9, 52.3, -6.1, 0, -90, 4, 52.3, 3.14, 3.14, 'x']  # add 'x' element that will be removed
+L1 = [1, 8.1, 9, 52.3, -6.1, 0, -90, 4, 52.3, 3.14, 3.14]  # add 'x' element that will be removed
 
 print(unique_list(L1).make_unique())
+
 
 # OUTPUT:
 # x:
