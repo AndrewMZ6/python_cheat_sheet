@@ -46,3 +46,5 @@ print(f"numpy exec time:{np_end_time - np_start_time:.2f}. Max is {npm}")
 # for loop exec time:16.61. Max is 100000
 # list comprehension exec time:15.06. Max is 100000
 # numpy exec time:0.18. Max is 100000
+#
+# 15/0.2 = 75
