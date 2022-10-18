@@ -5,11 +5,11 @@ class switchable(ABC):
     
     @abstractmethod
     def turn_on(self):
-        pass
+        '''Turns on the switchable object'''
 
     @abstractmethod
     def turn_off(self):
-        pass
+        '''Turns off the switchable object'''
 
 
 class lightbulb(switchable):
