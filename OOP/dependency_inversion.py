@@ -55,3 +55,11 @@ l = lightbulb()
 p = power_switcher(l)
 p.switch()
 p.switch()
+
+
+# OUTPUT:
+
+# the fairy_lights is turned on
+# the fairy_lights is turned off
+# the lightbulb is turned on
+# the lightbulb is turned off
