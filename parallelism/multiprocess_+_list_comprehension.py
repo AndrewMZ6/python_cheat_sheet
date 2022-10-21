@@ -19,7 +19,7 @@ print(f"lc exec time:{py_end_time - py_start_time:.5f}. len: {len(numlist)}, ele
 
 
 
-# with multiprocessing
+# with multiprocessing, 10 processes
 if __name__=='__main__':
 
 
