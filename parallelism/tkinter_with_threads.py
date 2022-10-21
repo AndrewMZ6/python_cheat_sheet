@@ -56,7 +56,7 @@ win.mainloop()
 # stop
 
 # CONSOLE OUTPUT
-# threads: [<_MainThread(MainThread, started 11108)>]
+# threads: [<_MainThread(MainThread, started 11108)>]	46 line reached
 # running thread "Thread-1"				clicked "start"
 # running thread "Thread-2"				clicked "start"
 # running thread "Thread-1"
@@ -68,7 +68,7 @@ win.mainloop()
 # changing flag from "MainThread" ...			clicked "stop"
 # While loop from thread "Thread-1" is over
 # While loop from thread "Thread-2" is over
-# threads left: ['MainThread']				46 line reached
+# threads left: ['MainThread']				end of stoploop function
 # running thread "Thread-3"				clicked "start"
 # running thread "Thread-3"
 # Hello from "MainThread"				clicked "Hello" button
@@ -76,4 +76,4 @@ win.mainloop()
 # running thread "Thread-3"
 # changing flag from "MainThread" ...			clicked "stop"
 # While loop from thread "Thread-3" is over
-# threads left: ['MainThread']				46 line reached again
+# threads left: ['MainThread']				end of stoploop function
