@@ -45,3 +45,35 @@ ttk.Button(text='quit', command=win.destroy).pack()
 
 print(f"threads: {threading.enumerate()}")
 win.mainloop()
+
+
+# CLICKED BUTTONS:
+# start 2 times
+# printHello 2 times
+# stop 1 time
+# start 1 time
+# printHello 1 times
+# stop
+
+# CONSOLE OUTPUT
+# threads: [<_MainThread(MainThread, started 11108)>]
+# running thread "Thread-1"
+# running thread "Thread-2"
+# running thread "Thread-1"
+# running thread "Thread-2"
+# Hello from "MainThread"
+# Hello from "MainThread"
+# running thread "Thread-1"
+# running thread "Thread-2"
+# changing flag from "MainThread" ...
+# While loop from thread "Thread-1" is over
+# While loop from thread "Thread-2" is over
+# threads left: ['MainThread']
+# running thread "Thread-3"
+# running thread "Thread-3"
+# Hello from "MainThread"
+# running thread "Thread-3"
+# running thread "Thread-3"
+# changing flag from "MainThread" ...
+# While loop from thread "Thread-3" is over
+# threads left: ['MainThread']
