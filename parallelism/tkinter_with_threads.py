@@ -35,11 +35,11 @@ def stoploop():
 
 win =  tk.Tk()
 
-butt = ttk.Button(text='start', command=runthread).pack()
-butt2 = ttk.Button(text='stop', command=stoploop).pack()
+ttk.Button(text='start', command=runthread).pack()
+ttk.Button(text='stop', command=stoploop).pack()
 
-butt3 = ttk.Button(text='printHello', command=printHello).pack()
-butt4 = ttk.Button(text='quit', command=win.destroy).pack()
+ttk.Button(text='printHello', command=printHello).pack()
+ttk.Button(text='quit', command=win.destroy).pack()
 
 
 
