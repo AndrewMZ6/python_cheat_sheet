@@ -52,8 +52,8 @@ win.mainloop()
 # printHello 2 times
 # stop 1 time
 # start 1 time
-# printHello 1 times
-# stop
+# printHello 1 time
+# stop 1 time
 
 # CONSOLE OUTPUT
 # threads: [<_MainThread(MainThread, started 11108)>]	46 line reached
