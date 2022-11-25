@@ -56,9 +56,13 @@ class Publisher(Subject):
 
 
 if __name__ == '__main__':
+
+	# A group of scientists observes termometer data
 	Ivan = concrete_Observer_1('Ivan')
 	Masha = concrete_Observer_1('Masha')
 	Georgy = concrete_Observer_1('Georgy')
+
+	# A termometer that periodycally sends data
 	termometer = Publisher()
 
 	termometer.attach(Ivan)
