@@ -87,3 +87,27 @@ if __name__ == '__main__':
 
 	termometer.attach(Masha)
 	termometer.notify()
+
+
+# OUTPUT:
+# Notification # 1. Publisher notifies observers
+# -> Ivan sees the notification!
+# Notification # 2. Publisher notifies observers
+# -> Ivan sees the notification!
+# -> Masha sees the notification!
+# Notification # 3. Publisher notifies observers
+# -> Ivan sees the notification!
+# Notification # 4. Publisher notifies observers
+# -> Ivan sees the notification!
+# -> Georgy sees the notification!
+# Notification # 5. Publisher notifies observers
+# -> Georgy sees the notification!
+# Notification # 6. Publisher notifies observers
+# -> Georgy sees the notification!
+# The observer list is empty. Nobody's interested :(
+# The observer list is empty. Nobody's interested :(
+# Notification # 7. Publisher notifies observers
+# -> Ivan sees the notification!
+# Notification # 8. Publisher notifies observers
+# -> Ivan sees the notification!
+# -> Masha sees the notification!
