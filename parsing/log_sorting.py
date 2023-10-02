@@ -30,4 +30,4 @@ with open(LOG_FILE_NAME) as f:
 
 
 if __name__ == '__main__':
-	print(items_list)
+	print(items_list) 		# amending last commit
