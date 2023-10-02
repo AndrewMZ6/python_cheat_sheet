@@ -13,20 +13,17 @@ except IndexError:
 	SEARCH_TAG = 'ID'
 
 
-PATTERN = fr'{SEARCH_TAG} = (-?\d+)'
+PATTERN = fr'.*{SEARCH_TAG} = (-?\d+)'
 
 with open(LOG_FILE_NAME) as f:
-	# while True:
-	string = f.read()
-	parsing_item = re.findall(PATTERN, string)
-	# if parsing_item:
-	# 	print(parsing_item.group())
-
-
-print(set(list(map(int, parsing_item))))
-
+	string = 'placeholder'
+	items_list = []
+	while string:
+		string = f.readline()
+		parsing_item = re.match(PATTERN, string)
+		if parsing_item:
+			items_list.append(parsing_item.group(1))
 
 
 
-# if __name__ == '__main__':
-# 	print(LOG_FILE_PATH)
+print(items_list)
