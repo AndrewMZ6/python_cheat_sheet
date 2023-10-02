@@ -17,6 +17,7 @@ SORTED_LOG_FILE_NAME = Path(__file__).parent/SORTED_LOG_FILE_NAME
 
 PATTERN = fr'.*{SEARCH_TAG} = (-?\d+)'
 
+
 with open(LOG_FILE_NAME) as f:
 	string = 'placeholder'
 	items_list = []
@@ -28,4 +29,5 @@ with open(LOG_FILE_NAME) as f:
 
 
 
-print(items_list)
+if __name__ == '__main__':
+	print(items_list)
